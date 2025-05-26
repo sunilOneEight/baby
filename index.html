@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            position: relative;
+            justify-content: center;
+            align-items:center;
+        }
+        #no{
+            margin-left:10px;
+            position: relative;
+            transition: all 2s ease;
+        }
+        #no:hover,#no:active{
+            animation: move 2s forwards;
+        }
+        @keyframes move{
+            from{
+                left:0px;
+                top:0px;
+            }
+            to{
+                left:100px;
+                top:200px;
+            }
+        }
+        .bb{
+            margin-top:30px;
+            width:80px;
+            height:50px;
+            border: none;
+           box-shadow:0px 0px 5px rgb(50, 3, 20);
+           border-radius: 20%;
+
+        }
+        .bb:hover{
+            background-color:rgb(241, 14, 102);
+        }
+        </style>
+</head>
+<body>
+    <center>
+    <section>
+        <img src="loveMe.gif"id="yes">
+        <div>
+            <button id="b"class="bb"onclick="yes()">yes</button>
+            <button id="no"class="bb">no</button>
+        </div>
+    </section>
+</body>
+</html>
+<script>
+    function yes(){
+        document.getElementById("yes").src="love2.gif";
+    }
+    </script>
